@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
   resources :other_payments
+  get 'readmissions/new'
+  get 'dedicated_hosting', to: 'websites#dedicated_hosting'
+  get 'shared_hosting', to: 'websites#shared_hosting'
+  get 'vps_hosting', to: 'websites#vps_hosting'
+  get 'about', to: 'websites#about'
+  get 'shared_hosting', to: 'websites#pricing'
+  get 'services', to: 'websites#services'
+
   get 'readmissions/new'
   get 'readmissions/create'
   get 'readmissions/index'
@@ -275,12 +286,50 @@ Rails.application.routes.draw do
   resources :invoices
   resources :profiles
   resources :grade_changes, only: %i[new create]
-  resources :payment_methods
+  # resources :payment_methods
   resources :payment_transactions
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root to: 'pages#home'
+  root to: 'websites#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # root to: 'application#home'
   get 'check_email', to: 'emails#check'
+
+  # Main pages
+  # get 'dedicated_hosting', to: 'websites#dedicated_hosting', as: :dedicated_hosting
+  # get 'shared_hosting', to: 'websites#shared_hosting', as: :shared_hosting
+  # get 'vps_hosting', to: 'websites#vps_hosting', as: :vps_hosting
+  get 'about', to: 'websites#about'
+  get 'faqs', to: 'websites#faqs', as: :faqs
+  get 'affiliate', to: 'websites#affiliate', as: :affiliate
+  get 'authentication', to: 'websites#authentication', as: :authentication
+  get 'forget_password', to: 'websites#forget_password', as: :forget_password
+  get 'cart', to: 'websites#cart', as: :cart
+  get 'checkout', to: 'websites#checkout', as: :checkout
+  get 'payment_method', to: 'websites#payment_method', as: :payment_method
+  get 'configurator', to: 'websites#configurator', as: :configurator
+  get 'specials', to: 'websites#specials', as: :specials
+  get 'search_page', to: 'websites#search_page', as: :search_page
+  get 'terms_conditions', to: 'websites#terms_conditions', as: :terms_conditions
+  get 'privacy_policy', to: 'websites#privacy_policy', as: :privacy_policy
+  get 'not_found', to: 'websites#not_found', as: :not_found
+  get 'pricing', to: 'websites#pricing', as: :pricing
+  get 'news_grid', to: 'websites#news_grid', as: :news_grid
+  get 'news_default', to: 'websites#news_default', as: :news_default
+  get 'news_details', to: 'websites#news_details', as: :news_details
+  get 'contact_us', to: 'websites#contact_us', as: :contact_us
+  get 'email_security', to: 'websites#email_security'
+  get 'ssl_certificates', to: 'websites#ssl_certificates'
+  get 'enterprise_email', to: 'websites#enterprise_email'
+  get 'magento_pro', to: 'websites#magento_pro'
+  get 'gsuite_google', to: 'websites#gsuite_google'
+  get 'iptv_services', to: 'websites#iptv_services'
+  get 'gaming_services', to: 'websites#gaming_services'
+  get 'voice_servers', to: 'websites#voice_servers'
+  get 'virtual_numbers', to: 'websites#virtual_numbers'
+  get 'database_services', to: 'websites#database_services'
+  get 'ddos_protections', to: 'websites#ddos_protections'
+  get 'user_invoices', to: 'websites#invoice'
+  get 'domain_name', to: 'websites#domain_name', as: :domain_name
+  get 'user_confirmation', to: 'websites#user_confirmation', as: :user_confirmation
 end

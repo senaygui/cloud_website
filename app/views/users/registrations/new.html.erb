@@ -1,0 +1,159 @@
+<div class="authentication-section">
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+      <div class="col-sm-12 col-lg-4 p-0">
+        <div class="authentication-item authentication-img-bg blue-gradient">
+          <div class="authentication-info">
+            <div class="authentication-info-img">
+              <%= image_tag 'authentication.png', alt: 'shape' %>
+            </div>
+            <div class="authentication-info-title section-title section-title-two">
+              <h2>Build Your Hosting Plans</h2>
+              <p>Get started with ODV Cloud—register now to build your custom hosting plan and unlock powerful features for your website or business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-8 p-0">
+        <div class="authentication-item bg-white">
+          <div class="authentication-user-panel">
+            <div class="authentication-user-header">
+              <%= image_tag 'logo-cloud3.png', class: 'logo1', alt: 'logo' %>
+              <%= image_tag 'logo-cloud3.png', class: 'logo2', alt: 'logo' %>
+              <h1>Welcome to ODV Cloud</h1>
+            </div>
+            <div class="authentication-user-body">
+              <div class="authentication-tab">
+                <div class="authentication-tab-item authentication-tab-active" data-authentcation-tab="2">
+                  <i class="flaticon-user-2"></i>
+                  Register Now
+                </div>
+              </div>
+              <div class="authentication-tab-details">
+                <div class="authentication-tab-details-item authentication-tab-details-active" data-authentcation-details="2">
+                  <div class="authentication-form">
+                    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { multipart: true }) do |f| %>
+                      <%= f.error_notification %>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :first_name, required: true, input_html: { class: "form-control", placeholder: "First Name *" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :last_name, required: true, input_html: { class: "form-control", placeholder: "Last Name *" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :middle_name, input_html: { class: "form-control", placeholder: "Middle Name" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :nationality, required: true, input_html: { class: "form-control", placeholder: "Nationality *" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :company_name, input_html: { class: "form-control", placeholder: "Company Name" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email", class: "form-control", placeholder: "Email Address *" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), input_html: { autocomplete: "new-password", class: "form-control", placeholder: "Password *" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-20">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password", class: "form-control", placeholder: "Confirm Password *" }, label: false %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <div class="input-group file-input-group">
+                            
+                            <%= f.input :photo, as: :file, input_html: { class: "form-control" }, label: "Photo" %>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <div class="input-group file-input-group">
+                            
+                            <%= f.input :passport, as: :file, input_html: { class: "form-control" }, label: "Passport" %>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-gradient full-width mb-20" type="submit">Sign Up</button>
+                        </div>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+              <div class="authentication-divider mb-20">
+                <span>Or Register With</span>
+              </div>
+              <div class="authentication-social-access">
+                <div class="authentication-social-item social-btn social-btn-fb">
+                  <a href="#" class="btn btn-pill default-box-shadow">Facebook</a>
+                </div>
+                <div class="authentication-social-item social-btn social-btn-tw">
+                  <a href="#" class="btn btn-pill default-box-shadow">Twitter</a>
+                </div>
+                <div class="authentication-social-item social-btn social-btn-ld">
+                  <a href="#" class="btn btn-pill default-box-shadow">Linkedin</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,196 @@
+<div class="topbar bg-off-white-two">
+            <div class="container">
+                <div class="topbar-inner">
+                    <div class="topbar-item">
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-chat"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= link_to 'Chat With A Consultant', '#' %>
+                            </div>
+                        </div>
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-phone"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= link_to '+436776430697', 'tel:+436776430697' %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topbar-item">
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-chat"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= mail_to 'info@odvcloud.com' %>
+                            </div>
+                        </div>
+                        <div class="topbar-item-list navbar-language">
+                            <button class="language-option" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="lang-name">
+                                    <%= image_tag 'uk.png', alt: 'flag', class: 'dropdown-flag-icon language-flag' %>
+                                    English
+                                </span>
+                                <span class="language-arrow"><i class="bx bx-chevron-down"></i></span>
+                            </button>
+                            <div class="dropdown-menu language-top-menu" aria-labelledby="language1">
+                                <%= link_to image_tag('uk.png', alt: 'flag', class: 'dropdown-flag-icon') + ' English', '#', class: 'dropdown-item' %>
+                                <%= link_to image_tag('germany.png', alt: 'flag', class: 'dropdown-flag-icon') + ' Deutsch', '#', class: 'dropdown-item' %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<header class="header-banner header-bg-shape-two header-padding">
+            <!-- navbar -->
+            <div class="fixed-top">
+                <div class="navbar-area">
+                    <!-- mobile menu -->
+                    <div class="mobile-nav mobile-nav-two">
+                         <a href="index-2.html" class="mobile-logo">
+                                <%= image_tag 'logo-cloud2.png', alt: 'logo', class: 'blue-logo logo1' %>
+                                <%= image_tag 'logo-cloud2.png', alt: 'logo', class: 'blue-logo logo2' %>
+                            </a>
+                        <!-- mobile navbar-option -->
+                        <div class="navbar-option">
+                            <div class="navbar-option-item navbar-option-dots dropdown">
+                                <button type="button" id="dot" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bx-dots-horizontal-rounded"></i>
+                                </button>
+                                <ul class="dropdown-menu navbar-dots-dropdown">
+                                    <!-- Removed search and cart dropdown items -->
+                                </ul>
+                            </div>
+                            <div class="navbar-option-item navbar-option-account">
+                                <a href="authentication.html" target="_blank" class="navbar-option-icon">
+                                    <span><i class='flaticon-user'></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- desktop menu -->
+                    <div class="main-nav main-nav-two bg-white">
+                        <div class="container">
+                            <nav class="navbar navbar-expand-md navbar-light ">
+                                <a class="navbar-brand" href="index-2.html">
+                                    <%= image_tag 'logo-cloud3.png', alt: 'logo', class: 'blue-logo logo1', width: '200' %>
+                                </a>
+                                <a class="navbar-brand" href="index-2.html">
+                                    <%= image_tag 'logo-cloud3.png', alt: 'logo', class: 'blue-logo logo2', width: '200' %>
+                                </a>
+                                <!-- nav-list -->
+                                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <%= link_to 'Home', root_path, class: 'nav-link active' %>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <%= link_to 'About Us', about_path, class: 'nav-link' %>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Hosting', '#', class: 'nav-link dropdown-toggle' %>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <%= link_to 'Dedicated Hosting', dedicated_hosting_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Shared Hosting', shared_hosting_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'VPS Hosting', vps_hosting_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'WordPress Hosting', '#', class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Cloud Hosting', '#', class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Domain Name', domain_name_path, class: 'nav-link' %>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Services', '#', class: 'nav-link dropdown-toggle' %>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <%= link_to 'Email Security', email_security_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'SSL Certificates', ssl_certificates_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Enterprise Email', enterprise_email_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Magento Pro', magento_pro_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'G Suite Google', gsuite_google_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'IPTV Services', iptv_services_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Gaming Services', gaming_services_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Voice Servers', voice_servers_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Virtual Numbers', virtual_numbers_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Database Services', database_services_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'DDoS Protections', ddos_protections_path, class: 'nav-link' %>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Pricing', pricing_path, class: 'nav-link' %>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Contact Us', contact_us_path, class: 'nav-link' %>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- navbar-option -->
+                                <div class="navbar-option">
+                                    <div class="navbar-option-item">
+                                        <%= link_to 'Login / Register', new_user_registration_path, class: 'btn btn-gradient text-nowrap' %>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .end navbar -->
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="header-width header-main-content-two desk-ml-auto">
+                            <h4>Welcome To ODV Cloud</h4>
+                            <h1>Get Web Hosting Plans At <small>$</small>199.00<span>/Monthly</span></h1>
+                            <p>Empower your business with secure, high-performance hosting and expert support—ODV Cloud is your trusted partner for growth online.</p>
+                            <ul class="section-button">
+                                <li><%= link_to 'Get Started', new_user_registration_path, class: 'btn btn-gradient' %></li>
+                                <li><a href="/about_us" class="btn" id="video-popup">Play For 1 Min</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="header-content-image">
+                            <%= image_tag 'header-clipart-2.png', alt: 'clipart' %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>

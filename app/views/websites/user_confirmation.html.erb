@@ -1,0 +1,16 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg border-0 rounded-4" style="background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);">
+        <div class="card-body text-center py-5">
+          <div class="mb-4">
+            <%= image_tag 'logo-cloud3.png', alt: 'ODV Cloud', style: 'height: 64px;' %>
+          </div>
+          <h1 class="mb-4 fw-bold text-primary">Thank You for Registering!</h1>
+          <p class="lead mb-4">Your registration was successful. Please wait until we check your identity based on the uploaded information, we will send you an email and you will be able to sign in.</p>
+          <%= link_to 'Back to Home', destroy_user_session_path, method: :delete, class: 'btn btn-gradient btn-lg px-5' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

@@ -1,0 +1,177 @@
+<% provide(:header_title, "Contact Us")%>        
+        <!-- about-us-section -->
+        <section class="contact-us-section pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="box-card fluid-height">
+                            <div class="box-card-inner box-card-black full-height default-box-shadow">
+                                <div class="box-card-content text-center">
+                                    <div class="box-card-icon blue-gradient">
+                                        <i class="flaticon-email"></i>
+                                    </div>
+                                    <div class="box-card-details">
+                                        <h3>Send Mail</h3>
+                                        <ul class="box-card-list">
+                                            <li><i class="flaticon-chat"></i><a class="link-us" href="https://odvcloud.com"><span class="__cf_email__" data-cfemail="157c7b737a5577797c783b767a78">info@odvcloud.com</span></a></li>
+                                            <li><i class="flaticon-email"></i><a class="link-us" href="https://odvcloud.com/">odvcloud.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="box-card fluid-height">
+                            <div class="box-card-inner blue-gradient full-height default-box-shadow">
+                                <div class="box-card-content text-center">
+                                    <div class="box-card-icon bg-white">
+                                        <i class="flaticon-phone-call-1"></i>
+                                    </div>
+                                    <div class="box-card-details">
+                                        <h3>Make A Call</h3>
+                                        <ul class="box-card-list">
+                                            <li><i class="flaticon-phone"></i><a href="tel:+436776430697">+436776430697</a></li>
+                                    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-md-3 offset-lg-0">
+                        <div class="box-card fluid-height">
+                            <div class="box-card-inner bg-white full-height default-box-shadow">
+                                <div class="box-card-content text-center">
+                                    <div class="box-card-icon blue-gradient">
+                                        <i class="flaticon-pin"></i>
+                                    </div>
+                                    <div class="box-card-details">
+                                        <h3>Find Us</h3>
+                                        <p>Mittelfeldweg 19, 1220 Wien, Austria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .end about-us-section -->
+        <!-- comment-section -->
+        <div class="comment-section pt-100 pb-70 blue-gradient-with-opacity">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-lg-4 pb-30">
+                        <div class="comment-content-item">
+                            <div class="about-content-image image-margin-left desk-pad-right-20">
+                                <%= image_tag 'support-2.png', alt: 'support' %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-8 pb-30">
+                        <div class="comment-content-item">
+                            <div class="comment-area bg-white">
+                                <div class="sub-section-title">
+                                    <h3>Leave A Message</h3>
+                                    <p>Your email address will not be published. Required fields are marked *</p>
+                                </div>
+                                <div class="comment-input-area mt-30">
+                                    <form id="contactForm">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="flaticon-user"></i></span>
+                                                        </div>
+                                                        <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Name*" />
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="flaticon-user"></i></span>
+                                                        </div>
+                                                        <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Email*" />
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="flaticon-phone-call"></i></span>
+                                                        </div>
+                                                        <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your phone number" class="form-control" placeholder="Phone*" />
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                                <div class="form-group mb-20">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="flaticon-book"></i></span>
+                                                        </div>
+                                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Subject*" />
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group mb-20">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="flaticon-envelope"></i></span>
+                                                        </div>
+                                                        <textarea name="message" class="form-control" id="message" rows="5" required data-error="Please write your message" placeholder="Your Message*"></textarea>
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <div class="form-check agree-label">
+                                                        <input
+                                                            name="gridCheck"
+                                                            value="I agree to the terms and privacy policy."
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            id="gridCheck"
+                                                            required
+                                                        >
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Accept <a href="terms-conditions.html">Terms & Conditions</a> And <a href="privacy-policy.html">Privacy Policy</a>
+                                                        </label>
+                                                        <div class="help-block with-errors gridCheck-error"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <button class="btn btn-gradient" type="submit">
+                                                    Send A Message
+                                                </button>
+                                                <div id="msgSubmit"></div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .end comment-section -->
+        <!-- map-section -->
+        <div class="map-section">
+            <div class="map-iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.087508893895!2d16.4876812!3d48.247101099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d015d82408c47%3A0xc3f85e7b84a92a37!2sMittelfeldweg%2019%2C%201220%20Wien%2C%20Austria!5e1!3m2!1sen!2set!4v1751448737911!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>

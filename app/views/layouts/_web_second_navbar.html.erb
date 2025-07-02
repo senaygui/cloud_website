@@ -1,0 +1,208 @@
+<div class="topbar bg-white">
+            <div class="custom-container-fluid container-fluid">
+                <div class="topbar-inner">
+                    <div class="topbar-item">
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-chat"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= link_to 'Chat With A Consultant', '#' %>
+                            </div>
+                        </div>
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-phone"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= link_to '+436776430697', 'tel:+436776430697' %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topbar-item">
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-chat"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= link_to 'info@odvcloud.com', 'mailto:info@odvcloud.com' %>
+                            </div>
+                        </div>
+                        <div class="topbar-item-list">
+                            <div class="topbar-list-thumb">
+                                <i class="flaticon-news-paper"></i>
+                            </div>
+                            <div class="topbar-list-content">
+                                <%= link_to 'News Feeds', '#' %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<header class="header-banner header-page blue-gradient">
+            <!-- navbar -->
+            <div class="fixed-top">
+                <div class="navbar-area">
+                    <!-- mobile menu -->
+                    <div class="mobile-nav">
+                         <%= link_to root_path, class: 'mobile-logo' do %>
+                                <%= image_tag 'white_logo.png', alt: 'logo', class: 'blue-logo logo1' %>
+                                <%= image_tag 'white_logo.png', alt: 'logo', class: 'blue-logo logo2' %>
+                            <% end %>
+                        <!-- mobile navbar-option -->
+                        <div class="navbar-option">
+                            <div class="navbar-option-item navbar-option-dots dropdown">
+                                <button type="button" id="dot" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bx-dots-horizontal-rounded"></i>
+                                </button>
+                                
+                            </div>
+                            
+                            <div class="navbar-option-item navbar-option-search dropdown mobile-hide">
+                                <button class="search navbar-option-icon dropdown-toggle" type="button" id="search3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="navbar-search-zoom"><i class="flaticon-zoom"></i></span>
+                                    <span class="navbar-search-cancel"><i class="flaticon-cancel"></i></span>
+                                </button>
+                                <div class="navbar-search dropdown-menu" aria-labelledby="search3">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Search...">
+                                            <button class="btn btn-gradient"><span><i class="flaticon-loupe"></i></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="navbar-option-item navbar-option-cart mobile-hide">
+                                <%= link_to  "#", target: '_blank', class: 'shopping-cart navbar-option-icon' do %>
+                                    <span><i class="flaticon-shopping-bags"></i></span>
+                                    <span class="shopping-cart-tooltip">2</span>
+                                <% end %>
+                            </div>
+                            <div class="navbar-option-item navbar-option-account">
+                                <%= link_to "sign in", target: '_blank', class: 'navbar-option-icon' do %>
+                                    <span><i class='flaticon-user'></i></span>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- desktop menu -->
+                    <div class="main-nav">
+                        <div class="custom-container-fluid container-fluid">
+                            <nav class="navbar navbar-expand-md navbar-light">
+                                <%= link_to root_path, class: 'navbar-brand' do %>
+                                    <%= image_tag 'white_logo.png', alt: 'logo', class: 'white-logo', width: "200px" %>
+                                    <%= image_tag 'white_logo.png', alt: 'logo', class: 'blue-logo', width: "200px" %>
+                                <% end %>
+                                <!-- nav-list -->
+                                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <%= link_to 'Home', root_path, class: 'nav-link' %>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <%= link_to 'About Us', about_path, class: 'nav-link' %>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Hosting', '#', class: 'nav-link dropdown-toggle active' %>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <%= link_to 'Dedicated Hosting', dedicated_hosting_path, class: 'nav-link active' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Shared Hosting', shared_hosting_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'VPS Hosting', vps_hosting_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'WordPress Hosting', "#", class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Cloud Hosting', "#", class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Domain Name', domain_name_path, class: 'nav-link' %>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Services', '#', class: 'nav-link dropdown-toggle' %>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <%= link_to 'Email Security', email_security_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'SSL Certificates', ssl_certificates_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Enterprise Email', enterprise_email_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Magento Pro', magento_pro_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'G Suite Google', gsuite_google_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'IPTV Services', iptv_services_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Gaming Services', gaming_services_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Voice Servers', voice_servers_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Virtual Numbers', virtual_numbers_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'Database Services', database_services_path, class: 'nav-link' %>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <%= link_to 'DDoS Protections', ddos_protections_path, class: 'nav-link' %>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Pricing', pricing_path, class: 'nav-link' %>
+                                        </li>
+                                        <li class="nav-item">
+                                            <%= link_to 'Contact Us', contact_us_path, class: 'nav-link' %>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- navbar-option -->
+                                <div class="navbar-option">
+                                    
+                                    <div class="navbar-option-item">
+                                        <li><%= link_to 'Get Started', new_user_registration_path, class: 'btn btn-pill' %></li>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .end navbar -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="header-page-content  text-lg-start">
+                            <h1><%= yield(:header_title)%></h1>
+                            <p><%= yield(:header_desc)%></p>
+                            <ul class="section-button">
+                               
+                                <li><%= link_to 'Get Started', new_user_registration_path, class: 'btn btn-pill' %></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 offset-lg-3 col-lg-3">
+                        <div class="header-page-image">
+                            <%= image_tag 'dedicated-header-shape.png', alt: 'shape' %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
