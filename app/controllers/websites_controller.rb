@@ -32,6 +32,10 @@ class WebsitesController < ApplicationController
   def additional_gateway; end
   def vmware; end
   def vrack; end
+  def antivirus; end
+  def enterprise_log_analytics; end
+  def enterprise_file_storage; end
+  def database_cloud_backup; end
 
   def user_confirmation; end
 end

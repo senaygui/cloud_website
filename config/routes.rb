@@ -343,4 +343,8 @@ Rails.application.routes.draw do
   get 'additional_gateway', to: 'websites#additional_gateway'
   get 'vmware', to: 'websites#vmware'
   get 'vrack', to: 'websites#vrack'
+  get 'antivirus', to: 'websites#antivirus'
+  get 'enterprise_log_analytics', to: 'websites#enterprise_log_analytics'
+  get 'enterprise_file_storage', to: 'websites#enterprise_file_storage'
+  get 'database_cloud_backup', to: 'websites#database_cloud_backup'
 end

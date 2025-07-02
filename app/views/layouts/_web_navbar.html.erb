@@ -104,20 +104,12 @@
                                                 <li class="nav-item">
                                                     <%= link_to 'VPS Hosting', vps_hosting_path, class: 'nav-link' %>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'WordPress Hosting', '#', class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Cloud Hosting', '#', class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Domain Name', domain_name_path, class: 'nav-link' %>
-                                                </li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
                                             <%= link_to 'Services', '#', class: 'nav-link dropdown-toggle', data: { bs_toggle: 'dropdown' }, role: 'button', 'aria-expanded': 'false' %>
-                                            <ul class="dropdown-menu services-dropdown-2col-fix" style="width: 650px; padding: 32px 40px; background: #fff; display: flex; gap: 0;">
+                                            <ul class="dropdown-menu services-dropdown-3col-fix scrollable-services-dropdown"
+                                                style="width: 900px; max-height: 400px; overflow-y: auto; padding: 32px 40px; background: #fff; display: flex; gap: 0;">
                                                 <li style="flex: 1; padding-right: 32px; list-style: none;">
                                                     <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.15rem; line-height: 2.2;">
                                                         <li class="nav-item"><%= link_to 'Email Security', email_security_path, class: 'nav-link' %></li>
@@ -129,13 +121,15 @@
                                                         <li class="nav-item"><%= link_to 'Gaming Services', gaming_services_path, class: 'nav-link' %></li>
                                                         <li class="nav-item"><%= link_to 'Voice Servers', voice_servers_path, class: 'nav-link' %></li>
                                                         <li class="nav-item"><%= link_to 'Blocked Storage', blocked_storage_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Virtual Numbers', virtual_numbers_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Database Services', database_services_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'DDoS Protections', ddos_protections_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Database Cloud Backup', database_cloud_backup_path, class: 'nav-link' %></li>
                                                     </ul>
                                                 </li>
                                                 <li style="flex: 1; list-style: none;">
                                                     <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.15rem; line-height: 2.2;">
-                                                        <li class="nav-item"><%= link_to 'Virtual Numbers', virtual_numbers_path, class: 'nav-link' %></li>
-                                                        <li class="nav-item"><%= link_to 'Database Services', database_services_path, class: 'nav-link' %></li>
-                                                        <li class="nav-item"><%= link_to 'DDoS Protections', ddos_protections_path, class: 'nav-link' %></li>
+                                                        
                                                         <li class="nav-item"><%= link_to 'Cloud Management', cloud_management_path, class: 'nav-link' %></li>
                                                         <li class="nav-item"><%= link_to 'OS Licenses', os_licenses_path, class: 'nav-link' %></li>
                                                         <li class="nav-item"><%= link_to 'AI Notebook Subscription', ai_notebook_subscription_path, class: 'nav-link' %></li>
@@ -146,6 +140,10 @@
                                                         <li class="nav-item"><%= link_to 'Additional Gateway', additional_gateway_path, class: 'nav-link' %></li>
                                                         <li class="nav-item"><%= link_to 'VMWare', vmware_path, class: 'nav-link' %></li>
                                                         <li class="nav-item"><%= link_to 'VRack', vrack_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Antivirus', antivirus_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Enterprise Log Analytics', enterprise_log_analytics_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Enterprise File Storage', enterprise_file_storage_path, class: 'nav-link' %></li>
+                                                        
                                                     </ul>
                                                 </li>
                                             </ul>
