@@ -128,40 +128,37 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <%= link_to 'Services', '#', class: 'nav-link dropdown-toggle' %>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <%= link_to 'Email Security', email_security_path, class: 'nav-link' %>
+                                            <%= link_to 'Services', '#', class: 'nav-link dropdown-toggle', data: { bs_toggle: 'dropdown' }, role: 'button', 'aria-expanded': 'false' %>
+                                            <ul class="dropdown-menu services-dropdown-2col-fix" style="width: 650px; padding: 32px 40px; background: #fff; display: flex; gap: 0;">
+                                                <li style="flex: 1; padding-right: 32px; list-style: none;">
+                                                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.15rem; line-height: 2.2;">
+                                                        <li class="nav-item"><%= link_to 'Email Security', email_security_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'SSL Certificates', ssl_certificates_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Enterprise Email', enterprise_email_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Magento Pro', magento_pro_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'G Suite Google', gsuite_google_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'IPTV Services', iptv_services_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Gaming Services', gaming_services_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Voice Servers', voice_servers_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Blocked Storage', blocked_storage_path, class: 'nav-link' %></li>
+                                                    </ul>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'SSL Certificates', ssl_certificates_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Enterprise Email', enterprise_email_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Magento Pro', magento_pro_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'G Suite Google', gsuite_google_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'IPTV Services', iptv_services_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Gaming Services', gaming_services_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Voice Servers', voice_servers_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Virtual Numbers', virtual_numbers_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'Database Services', database_services_path, class: 'nav-link' %>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <%= link_to 'DDoS Protections', ddos_protections_path, class: 'nav-link' %>
+                                                <li style="flex: 1; list-style: none;">
+                                                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.15rem; line-height: 2.2;">
+                                                        <li class="nav-item"><%= link_to 'Virtual Numbers', virtual_numbers_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Database Services', database_services_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'DDoS Protections', ddos_protections_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Cloud Management', cloud_management_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'OS Licenses', os_licenses_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'AI Notebook Subscription', ai_notebook_subscription_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Load Balancer', load_balancer_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Firewall', firewall_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'SnapShot', snapshot_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Additional IP', additional_ip_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'Additional Gateway', additional_gateway_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'VMWare', vmware_path, class: 'nav-link' %></li>
+                                                        <li class="nav-item"><%= link_to 'VRack', vrack_path, class: 'nav-link' %></li>
+                                                    </ul>
                                                 </li>
                                             </ul>
                                         </li>

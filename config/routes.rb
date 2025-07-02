@@ -332,4 +332,15 @@ Rails.application.routes.draw do
   get 'user_invoices', to: 'websites#invoice'
   get 'domain_name', to: 'websites#domain_name', as: :domain_name
   get 'user_confirmation', to: 'websites#user_confirmation', as: :user_confirmation
+  get 'cloud_management', to: 'websites#cloud_management'
+  get 'os_licenses', to: 'websites#os_licenses'
+  get 'ai_notebook_subscription', to: 'websites#ai_notebook_subscription'
+  get 'load_balancer', to: 'websites#load_balancer'
+  get 'firewall', to: 'websites#firewall'
+  get 'snapshot', to: 'websites#snapshot'
+  get 'additional_ip', to: 'websites#additional_ip'
+  get 'blocked_storage', to: 'websites#blocked_storage'
+  get 'additional_gateway', to: 'websites#additional_gateway'
+  get 'vmware', to: 'websites#vmware'
+  get 'vrack', to: 'websites#vrack'
 end

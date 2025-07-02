@@ -21,6 +21,17 @@ class WebsitesController < ApplicationController
   def database_services; end
   def ddos_protections; end
   def invoice; end
+  def cloud_management; end
+  def os_licenses; end
+  def ai_notebook_subscription; end
+  def load_balancer; end
+  def firewall; end
+  def snapshot; end
+  def additional_ip; end
+  def blocked_storage; end
+  def additional_gateway; end
+  def vmware; end
+  def vrack; end
 
   def user_confirmation; end
 end
