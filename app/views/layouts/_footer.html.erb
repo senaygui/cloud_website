@@ -22,11 +22,9 @@
                                                 <h3>Get Support</h3>
                                             </div>
                                             <ul class="footer-details footer-list">
-                                                <li><a href="shared-hosting.html">Shared Hosting</a></li>
-                                                <li><a href="wordpress-hosting.html">WordPress Hosting</a></li>
-                                                <li><a href="cloud-hosting.html">Cloud Hosting</a></li>
-                                                <li><a href="vps-hosting.html">VPS Hosting</a></li>
-                                                <li><a href="dedicated-hosting.html">Dedicated Hosting</a></li>
+                                                <li><%= link_to 'Shared Hosting', '#' %></li>
+                                                <li><%= link_to 'VPS Hosting', '#' %></li>
+                                                <li><%= link_to 'Dedicated Hosting', '#' %></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -36,11 +34,8 @@
                                                 <h3>Company</h3>
                                             </div>
                                             <ul class="footer-details footer-list">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="contact-us.html">Contact Us</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="news-default.html">News</a></li>
-                                                <li><a href="affiliate.html">Affiliate</a></li>
+                                                <li><%= link_to 'About Us', about_path %></li>
+                                                <li><%= link_to 'Contact Us', contact_us_path %></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -50,11 +45,9 @@
                                                 <h3>Solutions</h3>
                                             </div>
                                             <ul class="footer-details footer-list">
-                                                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                <li><a href="authentication.html">Authentication</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="faqs.html">FAQ's</a></li>
+                                                <li><%= link_to 'Terms & Conditions', terms_conditions_path rescue '#' %></li>
+                                                <li><%= link_to 'Privacy Policy', privacy_policy_path rescue '#' %></li>
+                                                <li><%= link_to "FAQ's", faqs_path rescue '#' %></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -90,7 +83,7 @@
                                 <!-- info -->
                                 <div class="footer-lower-text text-lg-end">
                                     <p class="footer-text-copy">Copyright Design & Developed by <a href="https://odvcloud.com/" target="_blank">ODV CLOUD LLC</a></p>
-                                    <p class="footer-text-gen">Terms & Conditions May Apply. <a href="terms-conditions.html" target="_blank">Click Here</a></p>
+                                    <p class="footer-text-gen">Terms & Conditions May Apply. <%= link_to 'Click Here', terms_conditions_path, target: '_blank' rescue '#' %></p>
                                 </div>
                                 <!-- refer button -->
                                 <div class="footer-lower-button">
